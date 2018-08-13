@@ -1,9 +1,10 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
+USE ieee.numeric_std.ALL;
 
 entity LED_peripheral is 
    generic ( 
-				freq : integer := 25000000;
+				freq : integer := 10000000;
 				step : integer := 10000000
 	);
 	port (
@@ -19,23 +20,27 @@ architecture led_p of LED_peripheral is
 
 	-- Declarations (optional)
 signal blink : std_logic := '0';
+signal multiplier : integer;
+signal freq_multiplied : integer;
+signal counter : integer := 0;
 
 begin
-	
+
+	multiplier <= to_integer(unsigned(KEY));
+	freq_multiplied <= freq * (1 + multiplier);
 	process(clk)
-	variable counter : integer range 0 to freq := 0;
 	begin
 	  if (rising_edge(clk)) then
-					if (counter < freq) then
-						 counter := counter + 1;
+					if (counter < freq_multiplied) then
+						 counter <= counter + 1;
 					else
 						 blink <= not blink;
-						 counter := 0;
+						 counter <= 0;
 					end if;
 	  end if;
 	end process;
 	
-	blink_out <= blink;
+	blink_out <= blink and enable;
 
 
 end led_p;

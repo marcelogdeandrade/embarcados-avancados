@@ -67,7 +67,6 @@ set_location_assignment PIN_V11 -to fpga_clk_50
 set_global_assignment -name VHDL_FILE LED_peripheral.vhd
 set_global_assignment -name VHDL_FILE topLevel.vhd
 set_global_assignment -name SOURCE_FILE "NIOS-Blink-LED.sdc
-"
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_location_assignment PIN_AH17 -to fpga_enable
