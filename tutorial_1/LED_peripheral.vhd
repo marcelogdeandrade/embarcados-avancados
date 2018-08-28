@@ -20,17 +20,18 @@ architecture led_p of LED_peripheral is
 
 	-- Declarations (optional)
 signal blink : std_logic := '0';
-signal multiplier : integer;
+signal multiplier : integer := 0;
 signal freq_multiplied : integer;
 signal counter : integer := 0;
 
 begin
 
-	multiplier <= to_integer(unsigned(KEY));
-	freq_multiplied <= freq * (1 + multiplier);
 	process(clk)
 	begin
+	
 	  if (rising_edge(clk)) then
+					multiplier <= to_integer(unsigned(KEY));
+					freq_multiplied <= freq * (1 + multiplier);
 					if (counter < freq_multiplied) then
 						 counter <= counter + 1;
 					else
