@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>30/08/2018 08:28:41</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1535628521205</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>30/08/2018 09:26:50</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1535632010297</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_2/software/niosHello_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../niosHello.sopcinfo</SopcDesignFile>

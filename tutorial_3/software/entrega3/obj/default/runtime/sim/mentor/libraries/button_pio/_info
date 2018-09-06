@@ -1,0 +1,81 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor
+Enioshello_button_pio
+Z1 w1536235921
+Z2 DPx9 altera_mf 20 altera_mf_components 0 22 7RjT1Xb9^`L[coRHZN<9k2
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z5 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 DPx6 altera 25 altera_europa_support_lib 0 22 J2=jg5mCcPK4G1k<k3;4E1
+R0
+Z9 8/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_button_pio.vhd
+Z10 F/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_button_pio.vhd
+l0
+L29
+V0oa4]U[a_FY3`;9Mi4YOf3
+!s100 O:Rh33X<CmVkO]Sz9dbRc0
+Z11 OV;C;10.5b;63
+32
+Z12 !s110 1536236150
+!i10b 1
+Z13 !s108 1536236150.000000
+Z14 !s90 -reportprogress|300|/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_button_pio.vhd|-work|button_pio|
+Z15 !s107 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_button_pio.vhd|
+!i113 1
+Z16 o-work button_pio
+Z17 tExplicit 1 CvgOpt 0
+Aeuropa
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z18 DEx4 work 20 nioshello_button_pio 0 22 0oa4]U[a_FY3`;9Mi4YOf3
+l58
+L47
+Z19 V1]V]QOhS@n`Kg^dGa@aa52
+Z20 !s100 GG82oLD69ioVD@AF:NWi33
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+vniosHello_button_pio
+!s110 1536234844
+!i10b 1
+!s100 Ri;UVSX_iFU[8Kj6@3BT[0
+I@?EFmSIEBLVK;d6@mPHZa3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1536233274
+8/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_button_pio.v
+F/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_button_pio.v
+L0 21
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1536234844.000000
+!s107 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_button_pio.v|
+!s90 -reportprogress|300|/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_button_pio.v|-work|button_pio|
+!i113 1
+R16
+tCvgOpt 0
+nnios@hello_button_pio

@@ -1,0 +1,1398 @@
+# Reading pref.tcl
+# do load_sim.tcl
+# obj/default/runtime/sim
+# [exec] file_copy
+# List Of Command Line Aliases
+# 
+# file_copy                                         -- Copy ROM/RAM files to simulation directory
+# 
+# dev_com                                           -- Compile device library files
+# 
+# com                                               -- Compile the design files in correct order
+# 
+# elab                                              -- Elaborate top level design
+# 
+# elab_debug                                        -- Elaborate the top level design with novopt option
+# 
+# ld                                                -- Compile all the design files and elaborate the top level design
+# 
+# ld_debug                                          -- Compile all the design files and elaborate the top level design with -novopt
+# 
+# 
+# 
+# List Of Variables
+# 
+# TOP_LEVEL_NAME                                    -- Top level module name.
+#                                                      For most designs, this should be overridden
+#                                                      to enable the elab/elab_debug aliases.
+# 
+# SYSTEM_INSTANCE_NAME                              -- Instantiated system module name inside top level module.
+# 
+# QSYS_SIMDIR                                       -- Platform Designer base simulation directory.
+# 
+# QUARTUS_INSTALL_DIR                               -- Quartus installation directory.
+# 
+# USER_DEFINED_COMPILE_OPTIONS                      -- User-defined compile options, added to com/dev_com aliases.
+# 
+# USER_DEFINED_ELAB_OPTIONS                         -- User-defined elaboration options, added to elab/elab_debug aliases.
+# 
+# USER_DEFINED_VHDL_COMPILE_OPTIONS                 -- User-defined vhdl compile options, added to com/dev_com aliases.
+# 
+# USER_DEFINED_VERILOG_COMPILE_OPTIONS              -- User-defined verilog compile options, added to com/dev_com aliases.
+#  ld
+# [exec] dev_com
+# [exec] com
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv -work error_adapter_0 
+# -- Compiling module niosHello_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_avalon_st_adapter.vhd -work avalon_st_adapter 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity niosHello_mm_interconnect_0_avalon_st_adapter
+# -- Compiling architecture rtl of niosHello_mm_interconnect_0_avalon_st_adapter
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_rsp_mux_001.sv -work rsp_mux_001 
+# -- Compiling module niosHello_mm_interconnect_0_rsp_mux_001
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_rsp_mux_001
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_arbitrator.sv -work rsp_mux_001 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_rsp_mux.sv -work rsp_mux 
+# -- Compiling module niosHello_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_rsp_mux
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_arbitrator.sv -work rsp_mux 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_rsp_demux.sv -work rsp_demux 
+# -- Compiling module niosHello_mm_interconnect_0_rsp_demux
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_rsp_demux
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_cmd_mux_002.sv -work cmd_mux_002 
+# -- Compiling module niosHello_mm_interconnect_0_cmd_mux_002
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_cmd_mux_002
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_arbitrator.sv -work cmd_mux_002 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_cmd_mux.sv -work cmd_mux 
+# -- Compiling module niosHello_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_cmd_mux
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_arbitrator.sv -work cmd_mux 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_cmd_demux_001.sv -work cmd_demux_001 
+# -- Compiling module niosHello_mm_interconnect_0_cmd_demux_001
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_cmd_demux_001
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_cmd_demux.sv -work cmd_demux 
+# -- Compiling module niosHello_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_cmd_demux
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_router_004.sv -work router_004 
+# -- Compiling module niosHello_mm_interconnect_0_router_004_default_decode
+# -- Compiling module niosHello_mm_interconnect_0_router_004
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_router_004
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_router_002.sv -work router_002 
+# -- Compiling module niosHello_mm_interconnect_0_router_002_default_decode
+# -- Compiling module niosHello_mm_interconnect_0_router_002
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_router_002
+# End time: 09:13:18 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:18 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_router_001.sv -work router_001 
+# -- Compiling module niosHello_mm_interconnect_0_router_001_default_decode
+# -- Compiling module niosHello_mm_interconnect_0_router_001
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_router_001
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_router.sv -work router 
+# -- Compiling module niosHello_mm_interconnect_0_router_default_decode
+# -- Compiling module niosHello_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_router
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_avalon_sc_fifo.v -work jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_agent.sv -work jtag_uart_0_avalon_jtag_slave_agent 
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_burst_uncompressor.sv -work jtag_uart_0_avalon_jtag_slave_agent 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_master_agent.sv -work nios2_gen2_0_data_master_agent 
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_translator.sv -work jtag_uart_0_avalon_jtag_slave_translator 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_master_translator.sv -work nios2_gen2_0_data_master_translator 
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_nios2_gen2_0_cpu_debug_slave_tck.v -work cpu 
+# -- Compiling module niosHello_nios2_gen2_0_cpu_debug_slave_tck
+# 
+# Top level modules:
+# 	niosHello_nios2_gen2_0_cpu_debug_slave_tck
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_nios2_gen2_0_cpu_debug_slave_wrapper.v -work cpu 
+# -- Compiling module niosHello_nios2_gen2_0_cpu_debug_slave_wrapper
+# 
+# Top level modules:
+# 	niosHello_nios2_gen2_0_cpu_debug_slave_wrapper
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_nios2_gen2_0_cpu.v -work cpu 
+# -- Compiling module niosHello_nios2_gen2_0_cpu_register_bank_a_module
+# -- Compiling module niosHello_nios2_gen2_0_cpu_register_bank_b_module
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_debug
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_break
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_xbrk
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_dbrk
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_itrace
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_td_mode
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_dtrace
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_fifo
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_pib
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_im
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_performance_monitors
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_avalon_reg
+# -- Compiling module niosHello_nios2_gen2_0_cpu_ociram_sp_ram_module
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_ocimem
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci
+# -- Compiling module niosHello_nios2_gen2_0_cpu
+# 
+# Top level modules:
+# 	niosHello_nios2_gen2_0_cpu_nios2_performance_monitors
+# 	niosHello_nios2_gen2_0_cpu
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_nios2_gen2_0_cpu_debug_slave_sysclk.v -work cpu 
+# -- Compiling module niosHello_nios2_gen2_0_cpu_debug_slave_sysclk
+# 
+# Top level modules:
+# 	niosHello_nios2_gen2_0_cpu_debug_slave_sysclk
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_nios2_gen2_0_cpu_test_bench.v -work cpu 
+# -- Compiling module niosHello_nios2_gen2_0_cpu_test_bench
+# 
+# Top level modules:
+# 	niosHello_nios2_gen2_0_cpu_test_bench
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_reset_controller.v -work rst_controller 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_reset_synchronizer.v -work rst_controller 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_irq_mapper.sv -work irq_mapper 
+# -- Compiling module niosHello_irq_mapper
+# 
+# Top level modules:
+# 	niosHello_irq_mapper
+# End time: 09:13:19 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:19 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0.v -work mm_interconnect_0 
+# -- Compiling module niosHello_mm_interconnect_0
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_program_memory.vhd -work program_memory 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package altera_europa_support_lib
+# -- Loading package altera_mf_components
+# -- Compiling entity niosHello_program_memory
+# -- Compiling architecture europa of niosHello_program_memory
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/peripheral-LED.vhd -work peripheral_LED_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity peripheral_LED
+# -- Compiling architecture rtl of peripheral_LED
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_nios2_gen2_0.v -work nios2_gen2_0 
+# -- Compiling module niosHello_nios2_gen2_0
+# 
+# Top level modules:
+# 	niosHello_nios2_gen2_0
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_keys_pio.vhd -work keys_pio 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package altera_europa_support_lib
+# -- Loading package altera_mf_components
+# -- Compiling entity niosHello_keys_pio
+# -- Compiling architecture europa of niosHello_keys_pio
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_jtag_uart_0.vhd -work jtag_uart_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package altera_europa_support_lib
+# -- Loading package altera_mf_components
+# -- Compiling entity niosHello_jtag_uart_0_sim_scfifo_w
+# -- Compiling architecture europa of niosHello_jtag_uart_0_sim_scfifo_w
+# -- Compiling entity niosHello_jtag_uart_0_scfifo_w
+# -- Compiling architecture europa of niosHello_jtag_uart_0_scfifo_w
+# -- Compiling entity niosHello_jtag_uart_0_sim_scfifo_r
+# -- Compiling architecture europa of niosHello_jtag_uart_0_sim_scfifo_r
+# -- Compiling entity niosHello_jtag_uart_0_scfifo_r
+# -- Compiling architecture europa of niosHello_jtag_uart_0_scfifo_r
+# -- Compiling entity niosHello_jtag_uart_0
+# -- Compiling architecture europa of niosHello_jtag_uart_0
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_data_memory.vhd -work data_memory 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package altera_europa_support_lib
+# -- Loading package altera_mf_components
+# -- Compiling entity niosHello_data_memory
+# -- Compiling architecture europa of niosHello_data_memory
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_button_pio.vhd -work button_pio 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package altera_europa_support_lib
+# -- Loading package altera_mf_components
+# -- Compiling entity niosHello_button_pio
+# -- Compiling architecture europa of niosHello_button_pio
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_avalon_reset_source.vhd -work niosHello_inst_reset_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity altera_avalon_reset_source
+# -- Compiling architecture behavioral of altera_avalon_reset_source
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm_0003_vhdl_pkg.vhd -work niosHello_inst_leds_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package altera_conduit_bfm_0003_vhdl_pkg
+# -- Compiling package body altera_conduit_bfm_0003_vhdl_pkg
+# -- Loading package altera_conduit_bfm_0003_vhdl_pkg
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm_0003.vhd -work niosHello_inst_leds_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_conduit_bfm_0003_vhdl_pkg
+# -- Compiling entity altera_conduit_bfm_0003
+# -- Compiling architecture altera_conduit_bfm_0003_arch of altera_conduit_bfm_0003
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm_0002_vhdl_pkg.vhd -work niosHello_inst_keys_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package altera_conduit_bfm_0002_vhdl_pkg
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm_0002_vhdl_pkg.vhd(49): (vcom-1236) Shared variables must be of a protected type.
+# -- Compiling package body altera_conduit_bfm_0002_vhdl_pkg
+# -- Loading package altera_conduit_bfm_0002_vhdl_pkg
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm_0002.vhd -work niosHello_inst_keys_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_conduit_bfm_0002_vhdl_pkg
+# -- Compiling entity altera_conduit_bfm_0002
+# -- Compiling architecture altera_conduit_bfm_0002_arch of altera_conduit_bfm_0002
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_avalon_clock_source.vhd -work niosHello_inst_clk_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity altera_avalon_clock_source
+# -- Compiling architecture behavioral of altera_avalon_clock_source
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm_vhdl_pkg.vhd -work niosHello_inst_button_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package altera_conduit_bfm_vhdl_pkg
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm_vhdl_pkg.vhd(49): (vcom-1236) Shared variables must be of a protected type.
+# -- Compiling package body altera_conduit_bfm_vhdl_pkg
+# -- Loading package altera_conduit_bfm_vhdl_pkg
+# End time: 09:13:20 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:20 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm.vhd -work niosHello_inst_button_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_conduit_bfm_vhdl_pkg
+# -- Compiling entity altera_conduit_bfm
+# -- Compiling architecture altera_conduit_bfm_arch of altera_conduit_bfm
+# End time: 09:13:21 on Sep 06,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:21 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello.vhd -work niosHello_inst 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity niosHello
+# -- Compiling architecture rtl of niosHello
+# End time: 09:13:21 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:13:21 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/niosHello_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity niosHello_tb
+# -- Compiling architecture rtl of niosHello_tb
+# End time: 09:13:21 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# [exec] elab
+# vsim -t ps -L work -L work_lib -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_002 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_004 -L router_002 -L router_001 -L router -L jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo -L jtag_uart_0_avalon_jtag_slave_agent -L nios2_gen2_0_data_master_agent -L jtag_uart_0_avalon_jtag_slave_translator -L nios2_gen2_0_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L program_memory -L peripheral_LED_0 -L nios2_gen2_0 -L keys_pio -L jtag_uart_0 -L data_memory -L button_pio -L niosHello_inst_reset_bfm -L niosHello_inst_leds_bfm -L niosHello_inst_keys_bfm -L niosHello_inst_clk_bfm -L niosHello_inst_button_bfm -L niosHello_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev niosHello_tb 
+# Start time: 09:13:21 on Sep 06,2018
+# Loading work.niosHello_tb
+# Loading niosHello_inst.niosHello
+# Loading button_pio.niosHello_button_pio
+# Loading data_memory.niosHello_data_memory
+# Loading altera_mf_ver.altsyncram
+# Loading jtag_uart_0.niosHello_jtag_uart_0
+# Loading jtag_uart_0.niosHello_jtag_uart_0_scfifo_w
+# Loading jtag_uart_0.niosHello_jtag_uart_0_sim_scfifo_w
+# Loading jtag_uart_0.niosHello_jtag_uart_0_scfifo_r
+# Loading jtag_uart_0.niosHello_jtag_uart_0_sim_scfifo_r
+# Loading keys_pio.niosHello_keys_pio
+# Loading nios2_gen2_0.niosHello_nios2_gen2_0
+# Loading cpu.niosHello_nios2_gen2_0_cpu
+# Loading cpu.niosHello_nios2_gen2_0_cpu_test_bench
+# Loading cpu.niosHello_nios2_gen2_0_cpu_register_bank_a_module
+# Loading cpu.niosHello_nios2_gen2_0_cpu_register_bank_b_module
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_debug
+# Loading altera_mf_ver.altera_std_synchronizer
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_break
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_xbrk
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_dbrk
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_itrace
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_dtrace
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_td_mode
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_fifo
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_pib
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_im
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_avalon_reg
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_ocimem
+# Loading cpu.niosHello_nios2_gen2_0_cpu_ociram_sp_ram_module
+# Loading cpu.niosHello_nios2_gen2_0_cpu_debug_slave_wrapper
+# Loading cpu.niosHello_nios2_gen2_0_cpu_debug_slave_tck
+# Loading cpu.niosHello_nios2_gen2_0_cpu_debug_slave_sysclk
+# ** Error: (vsim-3033) /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello.v(157): Instantiation of 'niosHello_peripheral_LED_0' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /niosHello_tb/nioshello_inst File: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello.v
+#         Searched libraries:
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/niosHello_inst
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/work
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/error_adapter_0
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/avalon_st_adapter
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/rsp_mux_001
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/rsp_mux
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/rsp_demux
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/cmd_mux_002
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/cmd_mux
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/cmd_demux_001
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/cmd_demux
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/router_004
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/router_002
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/router_001
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/router
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/jtag_uart_0_avalon_jtag_slave_agent
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/nios2_gen2_0_data_master_agent
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/jtag_uart_0_avalon_jtag_slave_translator
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/nios2_gen2_0_data_master_translator
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/cpu
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/rst_controller
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/irq_mapper
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/mm_interconnect_0
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/program_memory
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/peripheral_LED_0
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/nios2_gen2_0
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/keys_pio
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/jtag_uart_0
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/data_memory
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/button_pio
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/niosHello_inst_reset_bfm
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/niosHello_inst_leds_bfm
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/niosHello_inst_keys_bfm
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/niosHello_inst_clk_bfm
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/niosHello_inst_button_bfm
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/niosHello_inst
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/altera
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/220model
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/sgate
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/altera_mf
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/altera_lnsim
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/cyclonev
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/cyclonev_hssi
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/vhdl/altera
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/vhdl/220model
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/vhdl/sgate
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/vhdl/altera_mf
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/vhdl/altera_lnsim
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/vhdl/cyclonev
+# Loading program_memory.niosHello_program_memory
+# Loading mm_interconnect_0.niosHello_mm_interconnect_0
+# Loading sv_std.std
+# Loading nios2_gen2_0_data_master_translator.altera_merlin_master_translator
+# Loading jtag_uart_0_avalon_jtag_slave_translator.altera_merlin_slave_translator
+# Loading nios2_gen2_0_data_master_agent.altera_merlin_master_agent
+# Loading jtag_uart_0_avalon_jtag_slave_agent.altera_merlin_slave_agent
+# Loading jtag_uart_0_avalon_jtag_slave_agent.altera_merlin_burst_uncompressor
+# Loading jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo.altera_avalon_sc_fifo
+# Loading router.niosHello_mm_interconnect_0_router
+# Loading router.niosHello_mm_interconnect_0_router_default_decode
+# Loading router_001.niosHello_mm_interconnect_0_router_001
+# Loading router_001.niosHello_mm_interconnect_0_router_001_default_decode
+# Loading router_002.niosHello_mm_interconnect_0_router_002
+# Loading router_002.niosHello_mm_interconnect_0_router_002_default_decode
+# Loading router_004.niosHello_mm_interconnect_0_router_004
+# Loading router_004.niosHello_mm_interconnect_0_router_004_default_decode
+# Loading cmd_demux.niosHello_mm_interconnect_0_cmd_demux
+# Loading cmd_demux_001.niosHello_mm_interconnect_0_cmd_demux_001
+# Loading cmd_mux.niosHello_mm_interconnect_0_cmd_mux
+# Loading cmd_mux_002.niosHello_mm_interconnect_0_cmd_mux_002
+# Loading cmd_mux_002.altera_merlin_arbitrator
+# Loading cmd_mux_002.altera_merlin_arb_adder
+# Loading rsp_demux.niosHello_mm_interconnect_0_rsp_demux
+# Loading rsp_mux.niosHello_mm_interconnect_0_rsp_mux
+# Loading rsp_mux.altera_merlin_arbitrator
+# Loading rsp_mux.altera_merlin_arb_adder
+# Loading rsp_mux_001.niosHello_mm_interconnect_0_rsp_mux_001
+# Loading rsp_mux_001.altera_merlin_arbitrator
+# Loading rsp_mux_001.altera_merlin_arb_adder
+# Loading avalon_st_adapter.niosHello_mm_interconnect_0_avalon_st_adapter
+# Loading error_adapter_0.niosHello_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# Loading irq_mapper.niosHello_irq_mapper
+# Loading rst_controller.altera_reset_controller
+# Error loading design
+# End time: 09:13:21 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+#  
+ld
+# [exec] dev_com
+# [exec] com
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:48 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv -work error_adapter_0 
+# -- Compiling module niosHello_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# End time: 09:15:48 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:48 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_avalon_st_adapter.vhd -work avalon_st_adapter 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity niosHello_mm_interconnect_0_avalon_st_adapter
+# -- Compiling architecture rtl of niosHello_mm_interconnect_0_avalon_st_adapter
+# End time: 09:15:48 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:48 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_rsp_mux_001.sv -work rsp_mux_001 
+# -- Compiling module niosHello_mm_interconnect_0_rsp_mux_001
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_rsp_mux_001
+# End time: 09:15:48 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:48 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_arbitrator.sv -work rsp_mux_001 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 09:15:48 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:48 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_rsp_mux.sv -work rsp_mux 
+# -- Compiling module niosHello_mm_interconnect_0_rsp_mux
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_rsp_mux
+# End time: 09:15:48 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:48 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_arbitrator.sv -work rsp_mux 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 09:15:48 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:48 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_rsp_demux.sv -work rsp_demux 
+# -- Compiling module niosHello_mm_interconnect_0_rsp_demux
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_rsp_demux
+# End time: 09:15:48 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:48 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_cmd_mux_002.sv -work cmd_mux_002 
+# -- Compiling module niosHello_mm_interconnect_0_cmd_mux_002
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_cmd_mux_002
+# End time: 09:15:48 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:48 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_arbitrator.sv -work cmd_mux_002 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 09:15:48 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:48 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_cmd_mux.sv -work cmd_mux 
+# -- Compiling module niosHello_mm_interconnect_0_cmd_mux
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_cmd_mux
+# End time: 09:15:48 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:48 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_arbitrator.sv -work cmd_mux 
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# 
+# Top level modules:
+# 	altera_merlin_arbitrator
+# End time: 09:15:48 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:48 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_cmd_demux_001.sv -work cmd_demux_001 
+# -- Compiling module niosHello_mm_interconnect_0_cmd_demux_001
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_cmd_demux_001
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_cmd_demux.sv -work cmd_demux 
+# -- Compiling module niosHello_mm_interconnect_0_cmd_demux
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_cmd_demux
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_router_004.sv -work router_004 
+# -- Compiling module niosHello_mm_interconnect_0_router_004_default_decode
+# -- Compiling module niosHello_mm_interconnect_0_router_004
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_router_004
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_router_002.sv -work router_002 
+# -- Compiling module niosHello_mm_interconnect_0_router_002_default_decode
+# -- Compiling module niosHello_mm_interconnect_0_router_002
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_router_002
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_router_001.sv -work router_001 
+# -- Compiling module niosHello_mm_interconnect_0_router_001_default_decode
+# -- Compiling module niosHello_mm_interconnect_0_router_001
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_router_001
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0_router.sv -work router 
+# -- Compiling module niosHello_mm_interconnect_0_router_default_decode
+# -- Compiling module niosHello_mm_interconnect_0_router
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0_router
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_avalon_sc_fifo.v -work jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo 
+# -- Compiling module altera_avalon_sc_fifo
+# 
+# Top level modules:
+# 	altera_avalon_sc_fifo
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_agent.sv -work jtag_uart_0_avalon_jtag_slave_agent 
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# 
+# Top level modules:
+# 	altera_merlin_slave_agent
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 6
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_burst_uncompressor.sv -work jtag_uart_0_avalon_jtag_slave_agent 
+# -- Compiling module altera_merlin_burst_uncompressor
+# 
+# Top level modules:
+# 	altera_merlin_burst_uncompressor
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_master_agent.sv -work nios2_gen2_0_data_master_agent 
+# -- Compiling module altera_merlin_master_agent
+# 
+# Top level modules:
+# 	altera_merlin_master_agent
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_slave_translator.sv -work jtag_uart_0_avalon_jtag_slave_translator 
+# -- Compiling module altera_merlin_slave_translator
+# 
+# Top level modules:
+# 	altera_merlin_slave_translator
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_merlin_master_translator.sv -work nios2_gen2_0_data_master_translator 
+# -- Compiling module altera_merlin_master_translator
+# 
+# Top level modules:
+# 	altera_merlin_master_translator
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_nios2_gen2_0_cpu_debug_slave_tck.v -work cpu 
+# -- Compiling module niosHello_nios2_gen2_0_cpu_debug_slave_tck
+# 
+# Top level modules:
+# 	niosHello_nios2_gen2_0_cpu_debug_slave_tck
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_nios2_gen2_0_cpu_debug_slave_wrapper.v -work cpu 
+# -- Compiling module niosHello_nios2_gen2_0_cpu_debug_slave_wrapper
+# 
+# Top level modules:
+# 	niosHello_nios2_gen2_0_cpu_debug_slave_wrapper
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_nios2_gen2_0_cpu.v -work cpu 
+# -- Compiling module niosHello_nios2_gen2_0_cpu_register_bank_a_module
+# -- Compiling module niosHello_nios2_gen2_0_cpu_register_bank_b_module
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_debug
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_break
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_xbrk
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_dbrk
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_itrace
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_td_mode
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_dtrace
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_fifo
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_pib
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci_im
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_performance_monitors
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_avalon_reg
+# -- Compiling module niosHello_nios2_gen2_0_cpu_ociram_sp_ram_module
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_ocimem
+# -- Compiling module niosHello_nios2_gen2_0_cpu_nios2_oci
+# -- Compiling module niosHello_nios2_gen2_0_cpu
+# 
+# Top level modules:
+# 	niosHello_nios2_gen2_0_cpu_nios2_performance_monitors
+# 	niosHello_nios2_gen2_0_cpu
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:49 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_nios2_gen2_0_cpu_debug_slave_sysclk.v -work cpu 
+# -- Compiling module niosHello_nios2_gen2_0_cpu_debug_slave_sysclk
+# 
+# Top level modules:
+# 	niosHello_nios2_gen2_0_cpu_debug_slave_sysclk
+# End time: 09:15:49 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_nios2_gen2_0_cpu_test_bench.v -work cpu 
+# -- Compiling module niosHello_nios2_gen2_0_cpu_test_bench
+# 
+# Top level modules:
+# 	niosHello_nios2_gen2_0_cpu_test_bench
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_reset_controller.v -work rst_controller 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_reset_synchronizer.v -work rst_controller 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vlog -reportprogress 300 -sv /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_irq_mapper.sv -work irq_mapper 
+# -- Compiling module niosHello_irq_mapper
+# 
+# Top level modules:
+# 	niosHello_irq_mapper
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_mm_interconnect_0.v -work mm_interconnect_0 
+# -- Compiling module niosHello_mm_interconnect_0
+# 
+# Top level modules:
+# 	niosHello_mm_interconnect_0
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_program_memory.vhd -work program_memory 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package altera_europa_support_lib
+# -- Loading package altera_mf_components
+# -- Compiling entity niosHello_program_memory
+# -- Compiling architecture europa of niosHello_program_memory
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/peripheral-LED.vhd -work peripheral_LED_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Compiling entity peripheral_LED
+# -- Compiling architecture rtl of peripheral_LED
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vlog -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_nios2_gen2_0.v -work nios2_gen2_0 
+# -- Compiling module niosHello_nios2_gen2_0
+# 
+# Top level modules:
+# 	niosHello_nios2_gen2_0
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_keys_pio.vhd -work keys_pio 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package altera_europa_support_lib
+# -- Loading package altera_mf_components
+# -- Compiling entity niosHello_keys_pio
+# -- Compiling architecture europa of niosHello_keys_pio
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_jtag_uart_0.vhd -work jtag_uart_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package altera_europa_support_lib
+# -- Loading package altera_mf_components
+# -- Compiling entity niosHello_jtag_uart_0_sim_scfifo_w
+# -- Compiling architecture europa of niosHello_jtag_uart_0_sim_scfifo_w
+# -- Compiling entity niosHello_jtag_uart_0_scfifo_w
+# -- Compiling architecture europa of niosHello_jtag_uart_0_scfifo_w
+# -- Compiling entity niosHello_jtag_uart_0_sim_scfifo_r
+# -- Compiling architecture europa of niosHello_jtag_uart_0_sim_scfifo_r
+# -- Compiling entity niosHello_jtag_uart_0_scfifo_r
+# -- Compiling architecture europa of niosHello_jtag_uart_0_scfifo_r
+# -- Compiling entity niosHello_jtag_uart_0
+# -- Compiling architecture europa of niosHello_jtag_uart_0
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_data_memory.vhd -work data_memory 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package altera_europa_support_lib
+# -- Loading package altera_mf_components
+# -- Compiling entity niosHello_data_memory
+# -- Compiling architecture europa of niosHello_data_memory
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_button_pio.vhd -work button_pio 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package altera_europa_support_lib
+# -- Loading package altera_mf_components
+# -- Compiling entity niosHello_button_pio
+# -- Compiling architecture europa of niosHello_button_pio
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_avalon_reset_source.vhd -work niosHello_inst_reset_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity altera_avalon_reset_source
+# -- Compiling architecture behavioral of altera_avalon_reset_source
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm_0003_vhdl_pkg.vhd -work niosHello_inst_leds_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package altera_conduit_bfm_0003_vhdl_pkg
+# -- Compiling package body altera_conduit_bfm_0003_vhdl_pkg
+# -- Loading package altera_conduit_bfm_0003_vhdl_pkg
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm_0003.vhd -work niosHello_inst_leds_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_conduit_bfm_0003_vhdl_pkg
+# -- Compiling entity altera_conduit_bfm_0003
+# -- Compiling architecture altera_conduit_bfm_0003_arch of altera_conduit_bfm_0003
+# End time: 09:15:50 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:50 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm_0002_vhdl_pkg.vhd -work niosHello_inst_keys_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package altera_conduit_bfm_0002_vhdl_pkg
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm_0002_vhdl_pkg.vhd(49): (vcom-1236) Shared variables must be of a protected type.
+# -- Compiling package body altera_conduit_bfm_0002_vhdl_pkg
+# -- Loading package altera_conduit_bfm_0002_vhdl_pkg
+# End time: 09:15:51 on Sep 06,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:51 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm_0002.vhd -work niosHello_inst_keys_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_conduit_bfm_0002_vhdl_pkg
+# -- Compiling entity altera_conduit_bfm_0002
+# -- Compiling architecture altera_conduit_bfm_0002_arch of altera_conduit_bfm_0002
+# End time: 09:15:51 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:51 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_avalon_clock_source.vhd -work niosHello_inst_clk_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity altera_avalon_clock_source
+# -- Compiling architecture behavioral of altera_avalon_clock_source
+# End time: 09:15:51 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:51 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm_vhdl_pkg.vhd -work niosHello_inst_button_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package altera_conduit_bfm_vhdl_pkg
+# ** Warning: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm_vhdl_pkg.vhd(49): (vcom-1236) Shared variables must be of a protected type.
+# -- Compiling package body altera_conduit_bfm_vhdl_pkg
+# -- Loading package altera_conduit_bfm_vhdl_pkg
+# End time: 09:15:51 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:51 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/altera_conduit_bfm.vhd -work niosHello_inst_button_bfm 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_conduit_bfm_vhdl_pkg
+# -- Compiling entity altera_conduit_bfm
+# -- Compiling architecture altera_conduit_bfm_arch of altera_conduit_bfm
+# End time: 09:15:51 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:51 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello.vhd -work niosHello_inst 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity niosHello
+# -- Compiling architecture rtl of niosHello
+# End time: 09:15:51 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:15:51 on Sep 06,2018
+# vcom -reportprogress 300 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/niosHello_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity niosHello_tb
+# -- Compiling architecture rtl of niosHello_tb
+# End time: 09:15:51 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# [exec] elab
+# vsim -t ps -L work -L work_lib -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_002 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_004 -L router_002 -L router_001 -L router -L jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo -L jtag_uart_0_avalon_jtag_slave_agent -L nios2_gen2_0_data_master_agent -L jtag_uart_0_avalon_jtag_slave_translator -L nios2_gen2_0_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L program_memory -L peripheral_LED_0 -L nios2_gen2_0 -L keys_pio -L jtag_uart_0 -L data_memory -L button_pio -L niosHello_inst_reset_bfm -L niosHello_inst_leds_bfm -L niosHello_inst_keys_bfm -L niosHello_inst_clk_bfm -L niosHello_inst_button_bfm -L niosHello_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev niosHello_tb 
+# Start time: 09:15:51 on Sep 06,2018
+# Loading work.niosHello_tb
+# Loading niosHello_inst.niosHello
+# Loading button_pio.niosHello_button_pio
+# Loading data_memory.niosHello_data_memory
+# Loading altera_mf_ver.altsyncram
+# Loading jtag_uart_0.niosHello_jtag_uart_0
+# Loading jtag_uart_0.niosHello_jtag_uart_0_scfifo_w
+# Loading jtag_uart_0.niosHello_jtag_uart_0_sim_scfifo_w
+# Loading jtag_uart_0.niosHello_jtag_uart_0_scfifo_r
+# Loading jtag_uart_0.niosHello_jtag_uart_0_sim_scfifo_r
+# Loading keys_pio.niosHello_keys_pio
+# Loading nios2_gen2_0.niosHello_nios2_gen2_0
+# Loading cpu.niosHello_nios2_gen2_0_cpu
+# Loading cpu.niosHello_nios2_gen2_0_cpu_test_bench
+# Loading cpu.niosHello_nios2_gen2_0_cpu_register_bank_a_module
+# Loading cpu.niosHello_nios2_gen2_0_cpu_register_bank_b_module
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_debug
+# Loading altera_mf_ver.altera_std_synchronizer
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_break
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_xbrk
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_dbrk
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_itrace
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_dtrace
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_td_mode
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_fifo
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_pib
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_oci_im
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_avalon_reg
+# Loading cpu.niosHello_nios2_gen2_0_cpu_nios2_ocimem
+# Loading cpu.niosHello_nios2_gen2_0_cpu_ociram_sp_ram_module
+# Loading cpu.niosHello_nios2_gen2_0_cpu_debug_slave_wrapper
+# Loading cpu.niosHello_nios2_gen2_0_cpu_debug_slave_tck
+# Loading cpu.niosHello_nios2_gen2_0_cpu_debug_slave_sysclk
+# ** Error: (vsim-3033) /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello.v(157): Instantiation of 'niosHello_peripheral_LED_0' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /niosHello_tb/nioshello_inst File: /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello.v
+#         Searched libraries:
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/niosHello_inst
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/work
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/error_adapter_0
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/avalon_st_adapter
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/rsp_mux_001
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/rsp_mux
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/rsp_demux
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/cmd_mux_002
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/cmd_mux
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/cmd_demux_001
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/cmd_demux
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/router_004
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/router_002
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/router_001
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/router
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/jtag_uart_0_avalon_jtag_slave_agent
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/nios2_gen2_0_data_master_agent
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/jtag_uart_0_avalon_jtag_slave_translator
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/nios2_gen2_0_data_master_translator
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/cpu
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/rst_controller
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/irq_mapper
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/mm_interconnect_0
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/program_memory
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/peripheral_LED_0
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/nios2_gen2_0
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/keys_pio
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/jtag_uart_0
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/data_memory
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/button_pio
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/niosHello_inst_reset_bfm
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/niosHello_inst_leds_bfm
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/niosHello_inst_keys_bfm
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/niosHello_inst_clk_bfm
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/niosHello_inst_button_bfm
+#             /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor/libraries/niosHello_inst
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/altera
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/220model
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/sgate
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/altera_mf
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/altera_lnsim
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/cyclonev
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/cyclonev_hssi
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/verilog/cyclonev_pcie_hip
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/vhdl/altera
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/vhdl/220model
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/vhdl/sgate
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/vhdl/altera_mf
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/vhdl/altera_lnsim
+#             /home/marcelo/intelFPGA/18.0/modelsim_ase/altera/vhdl/cyclonev
+# Loading program_memory.niosHello_program_memory
+# Loading mm_interconnect_0.niosHello_mm_interconnect_0
+# Loading sv_std.std
+# Loading nios2_gen2_0_data_master_translator.altera_merlin_master_translator
+# Loading jtag_uart_0_avalon_jtag_slave_translator.altera_merlin_slave_translator
+# Loading nios2_gen2_0_data_master_agent.altera_merlin_master_agent
+# Loading jtag_uart_0_avalon_jtag_slave_agent.altera_merlin_slave_agent
+# Loading jtag_uart_0_avalon_jtag_slave_agent.altera_merlin_burst_uncompressor
+# Loading jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo.altera_avalon_sc_fifo
+# Loading router.niosHello_mm_interconnect_0_router
+# Loading router.niosHello_mm_interconnect_0_router_default_decode
+# Loading router_001.niosHello_mm_interconnect_0_router_001
+# Loading router_001.niosHello_mm_interconnect_0_router_001_default_decode
+# Loading router_002.niosHello_mm_interconnect_0_router_002
+# Loading router_002.niosHello_mm_interconnect_0_router_002_default_decode
+# Loading router_004.niosHello_mm_interconnect_0_router_004
+# Loading router_004.niosHello_mm_interconnect_0_router_004_default_decode
+# Loading cmd_demux.niosHello_mm_interconnect_0_cmd_demux
+# Loading cmd_demux_001.niosHello_mm_interconnect_0_cmd_demux_001
+# Loading cmd_mux.niosHello_mm_interconnect_0_cmd_mux
+# Loading cmd_mux_002.niosHello_mm_interconnect_0_cmd_mux_002
+# Loading cmd_mux_002.altera_merlin_arbitrator
+# Loading cmd_mux_002.altera_merlin_arb_adder
+# Loading rsp_demux.niosHello_mm_interconnect_0_rsp_demux
+# Loading rsp_mux.niosHello_mm_interconnect_0_rsp_mux
+# Loading rsp_mux.altera_merlin_arbitrator
+# Loading rsp_mux.altera_merlin_arb_adder
+# Loading rsp_mux_001.niosHello_mm_interconnect_0_rsp_mux_001
+# Loading rsp_mux_001.altera_merlin_arbitrator
+# Loading rsp_mux_001.altera_merlin_arb_adder
+# Loading avalon_st_adapter.niosHello_mm_interconnect_0_avalon_st_adapter
+# Loading error_adapter_0.niosHello_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# Loading irq_mapper.niosHello_irq_mapper
+# Loading rst_controller.altera_reset_controller
+# Error loading design
+# End time: 09:15:51 on Sep 06,2018, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

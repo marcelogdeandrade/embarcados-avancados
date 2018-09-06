@@ -1,0 +1,359 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor
+Enioshello_jtag_uart_0
+Z1 w1536235922
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx6 altera 25 altera_europa_support_lib 0 22 J2=jg5mCcPK4G1k<k3;4E1
+R0
+Z8 8/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_jtag_uart_0.vhd
+Z9 F/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_jtag_uart_0.vhd
+l0
+L455
+V0MCBEk6VVQAQJkFKf1P:d3
+!s100 <]dViTI`GWjaFlo``3T_i1
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1536236150
+!i10b 1
+Z12 !s108 1536236150.000000
+Z13 !s90 -reportprogress|300|/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_jtag_uart_0.vhd|-work|jtag_uart_0|
+Z14 !s107 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_jtag_uart_0.vhd|
+!i113 1
+Z15 o-work jtag_uart_0
+Z16 tExplicit 1 CvgOpt 0
+Aeuropa
+R2
+R3
+R4
+R5
+R6
+R7
+Z17 DEx4 work 21 nioshello_jtag_uart_0 0 22 0MCBEk6VVQAQJkFKf1P:d3
+l573
+L478
+Z18 VbW?JRBj?AOOeFK@TOMQn^0
+Z19 !s100 =Yc@o:Mb>Vn^G4SYDaKoi3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+vniosHello_jtag_uart_0
+Z20 !s110 1536234844
+!i10b 1
+!s100 K3>a8LZ[TbDBbH:ZL?OVb3
+IC:jHKS1canz5U<jJPmmQh1
+Z21 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z22 w1536233275
+Z23 8/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_jtag_uart_0.v
+Z24 F/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_jtag_uart_0.v
+L0 331
+Z25 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z26 !s108 1536234844.000000
+Z27 !s107 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_jtag_uart_0.v|
+Z28 !s90 -reportprogress|300|/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/submodules/niosHello_jtag_uart_0.v|-work|jtag_uart_0|
+!i113 1
+R15
+Z29 tCvgOpt 0
+nnios@hello_jtag_uart_0
+Enioshello_jtag_uart_0_scfifo_r
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L313
+V288zMb_V8J]zc@>><W^[=2
+!s100 ]obI1<OkXCPhkgnc]nmk30
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Aeuropa
+R2
+R3
+R4
+R5
+R6
+R7
+Z30 DEx4 work 30 nioshello_jtag_uart_0_scfifo_r 0 22 288zMb_V8J]zc@>><W^[=2
+l381
+L332
+Z31 VBL[D>cHd6zd;9SPCSF?Tj0
+Z32 !s100 AeRhbdEVejdO0CLKD_^BY1
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+vniosHello_jtag_uart_0_scfifo_r
+R20
+!i10b 1
+!s100 d[`E3Yab7LSlLjmJ6ig@=0
+I;POKAo=N_klJF45jDmK0b3
+R21
+R0
+R22
+R23
+R24
+L0 243
+R25
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 1
+R15
+R29
+nnios@hello_jtag_uart_0_scfifo_r
+Enioshello_jtag_uart_0_scfifo_w
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L95
+VBJ1R3fNQCbZQPH;U9X;g20
+!s100 _IUO@Go<[n?ZfOGQLO_=J2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Aeuropa
+R2
+R3
+R4
+R5
+R6
+R7
+Z33 DEx4 work 30 nioshello_jtag_uart_0_scfifo_w 0 22 BJ1R3fNQCbZQPH;U9X;g20
+l162
+L113
+Z34 VU>E^Ic4JTTbF[3PgUN^7D0
+Z35 !s100 [?><D56QdKHQ=dEQ3lWRW2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+vniosHello_jtag_uart_0_scfifo_w
+R20
+!i10b 1
+!s100 :h:j=RhK9ZB?iDP0i8zFh0
+I_RkB:fi^`b5oY1E3R`Fb31
+R21
+R0
+R22
+R23
+R24
+L0 78
+R25
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 1
+R15
+R29
+nnios@hello_jtag_uart_0_scfifo_w
+Enioshello_jtag_uart_0_sim_scfifo_r
+R1
+Z36 DPx9 altera_mf 20 altera_mf_components 0 22 7RjT1Xb9^`L[coRHZN<9k2
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L233
+V3`_3mm<f[h?08N4AVbOG52
+!s100 MSX:iZ4`S3lZ^4[^[]cU^0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Aeuropa
+R36
+R2
+R3
+R4
+R5
+R6
+R7
+Z37 DEx4 work 34 nioshello_jtag_uart_0_sim_scfifo_r 0 22 3`_3mm<f[h?08N4AVbOG52
+l257
+L249
+Z38 VQ?:2>=oARX8BVSlXK:nHN1
+Z39 !s100 GXbgFKY@mg0]bb=M:eoRl3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+vniosHello_jtag_uart_0_sim_scfifo_r
+R20
+!i10b 1
+!s100 ?3J0I>C<V[TCO4E8WA3A;3
+Ieee<^Qzn1j[d]lT:_:S_R2
+R21
+R0
+R22
+R23
+R24
+L0 164
+R25
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 1
+R15
+R29
+nnios@hello_jtag_uart_0_sim_scfifo_r
+Enioshello_jtag_uart_0_sim_scfifo_w
+R1
+R36
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L32
+VYZh`D<jX7E36dnS0eHGz;2
+!s100 :K?E2=_c]XLL<8gZHRI;82
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Aeuropa
+R36
+R2
+R3
+R4
+R5
+R6
+R7
+Z40 DEx4 work 34 nioshello_jtag_uart_0_sim_scfifo_w 0 22 YZh`D<jX7E36dnS0eHGz;2
+l50
+L48
+Z41 V22M_XDJC9UUASU:>6z?Vg2
+Z42 !s100 g>7RoJ9<Eb<JTTSb2<NA50
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+vniosHello_jtag_uart_0_sim_scfifo_w
+R20
+!i10b 1
+!s100 SV<<<Wd1K[Q976>U1c`V=0
+IK?2>;A^5mU5e6N9oORQ^71
+R21
+R0
+R22
+R23
+R24
+L0 21
+R25
+r1
+!s85 0
+31
+R26
+R27
+R28
+!i113 1
+R15
+R29
+nnios@hello_jtag_uart_0_sim_scfifo_w

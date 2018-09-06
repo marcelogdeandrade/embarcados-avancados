@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/software/entrega3/obj/default/runtime/sim/mentor
+vniosHello_tb
+!s110 1536234844
+!i10b 1
+!s100 ;aNG`F6`8^6Y9h2OHFD8=0
+IMoF@69d9njK^J5nWEWi=h0
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1536233272
+8/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/niosHello_tb.v
+F/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/niosHello_tb.v
+L0 6
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1536234844.000000
+!s107 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/niosHello_tb.v|
+!s90 -reportprogress|300|/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/niosHello_tb.v|
+!i113 1
+tCvgOpt 0
+nnios@hello_tb
+Enioshello_tb
+Z1 w1536235919
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/niosHello_tb.vhd
+Z6 F/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/niosHello_tb.vhd
+l0
+L9
+VEFejhITKJN:d:=OSg?@iG3
+!s100 n0Zmz=?>=NU>@Kg]Gbai:0
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1536236151
+!i10b 1
+Z9 !s108 1536236151.000000
+Z10 !s90 -reportprogress|300|/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/niosHello_tb.vhd|
+Z11 !s107 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/niosHello/testbench/niosHello_tb/simulation/niosHello_tb.vhd|
+!i113 1
+Z12 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+Z13 DEx4 work 12 nioshello_tb 0 22 EFejhITKJN:d:=OSg?@iG3
+l47
+L12
+Z14 V@KPZK7PUS]3c]Wad_FRN_2
+Z15 !s100 QD:Tf2Bz2LkUMdk7MR^=60
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+Eperipheral_led
+Z16 w1535630141
+R2
+Z17 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z18 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R3
+R4
+R0
+Z19 8/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/IP/peripheral-LED.vhd
+Z20 F/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/IP/peripheral-LED.vhd
+l0
+L7
+VFj8fNblJ=@mk@6oWZSdjI3
+!s100 3j7I`3Ck[I=2iYkT^njRS2
+R7
+32
+Z21 !s110 1536235729
+!i10b 1
+Z22 !s108 1536235729.000000
+Z23 !s90 -reportprogress|300|-work|work|/home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/IP/peripheral-LED.vhd|
+Z24 !s107 /home/marcelo/Documents/Insper/Embarcados/Entregas/tutorial_3/IP/peripheral-LED.vhd|
+!i113 1
+Z25 o-work work
+R12
+Artl
+R2
+R17
+R18
+R3
+R4
+DEx4 work 14 peripheral_led 0 22 Fj8fNblJ=@mk@6oWZSdjI3
+l29
+L28
+VU4WNR^:MC9G@<QTGz38^:1
+!s100 c`UnYneTcRGFXTV62IKX02
+R7
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R25
+R12
