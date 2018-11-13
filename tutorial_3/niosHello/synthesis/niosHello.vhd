@@ -8,11 +8,13 @@ use IEEE.numeric_std.all;
 
 entity niosHello is
 	port (
-		button_export : in  std_logic                    := '0';             -- button.export
-		clk_clk       : in  std_logic                    := '0';             --    clk.clk
-		keys_export   : in  std_logic_vector(3 downto 0) := (others => '0'); --   keys.export
-		leds_leds     : out std_logic_vector(5 downto 0);                    --   leds.leds
-		reset_reset_n : in  std_logic                    := '0'              --  reset.reset_n
+		button_export    : in  std_logic                    := '0';             --    button.export
+		clk_clk          : in  std_logic                    := '0';             --       clk.clk
+		encoder_a_export : in  std_logic                    := '0';             -- encoder_a.export
+		encoder_b_export : in  std_logic                    := '0';             -- encoder_b.export
+		keys_export      : in  std_logic_vector(3 downto 0) := (others => '0'); --      keys.export
+		leds_leds        : out std_logic_vector(5 downto 0);                    --      leds.leds
+		reset_reset_n    : in  std_logic                    := '0'              --     reset.reset_n
 	);
 end entity niosHello;
 
@@ -46,6 +48,20 @@ architecture rtl of niosHello is
 			freeze     : in  std_logic                     := 'X'              -- freeze
 		);
 	end component niosHello_data_memory;
+
+	component peripheral_ENCONDER is
+		port (
+			clk           : in  std_logic                     := 'X';             -- clk
+			reset         : in  std_logic                     := 'X';             -- reset
+			avs_address   : in  std_logic_vector(3 downto 0)  := (others => 'X'); -- address
+			avs_read      : in  std_logic                     := 'X';             -- read
+			avs_readdata  : out std_logic_vector(31 downto 0);                    -- readdata
+			avs_write     : in  std_logic                     := 'X';             -- write
+			avs_writedata : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			A             : in  std_logic                     := 'X';             -- export
+			B             : in  std_logic                     := 'X'              -- export
+		);
+	end component peripheral_ENCONDER;
 
 	component niosHello_jtag_uart_0 is
 		port (
@@ -167,6 +183,11 @@ architecture rtl of niosHello is
 			data_memory_s1_byteenable                      : out std_logic_vector(3 downto 0);                     -- byteenable
 			data_memory_s1_chipselect                      : out std_logic;                                        -- chipselect
 			data_memory_s1_clken                           : out std_logic;                                        -- clken
+			encoder_0_avalon_slave_0_address               : out std_logic_vector(3 downto 0);                     -- address
+			encoder_0_avalon_slave_0_write                 : out std_logic;                                        -- write
+			encoder_0_avalon_slave_0_read                  : out std_logic;                                        -- read
+			encoder_0_avalon_slave_0_readdata              : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			encoder_0_avalon_slave_0_writedata             : out std_logic_vector(31 downto 0);                    -- writedata
 			jtag_uart_0_avalon_jtag_slave_address          : out std_logic_vector(0 downto 0);                     -- address
 			jtag_uart_0_avalon_jtag_slave_write            : out std_logic;                                        -- write
 			jtag_uart_0_avalon_jtag_slave_read             : out std_logic;                                        -- read
@@ -298,6 +319,11 @@ architecture rtl of niosHello is
 	signal mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read            : std_logic;                     -- mm_interconnect_0:jtag_uart_0_avalon_jtag_slave_read -> mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read:in
 	signal mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write           : std_logic;                     -- mm_interconnect_0:jtag_uart_0_avalon_jtag_slave_write -> mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write:in
 	signal mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_writedata       : std_logic_vector(31 downto 0); -- mm_interconnect_0:jtag_uart_0_avalon_jtag_slave_writedata -> jtag_uart_0:av_writedata
+	signal mm_interconnect_0_encoder_0_avalon_slave_0_readdata             : std_logic_vector(31 downto 0); -- encoder_0:avs_readdata -> mm_interconnect_0:encoder_0_avalon_slave_0_readdata
+	signal mm_interconnect_0_encoder_0_avalon_slave_0_address              : std_logic_vector(3 downto 0);  -- mm_interconnect_0:encoder_0_avalon_slave_0_address -> encoder_0:avs_address
+	signal mm_interconnect_0_encoder_0_avalon_slave_0_read                 : std_logic;                     -- mm_interconnect_0:encoder_0_avalon_slave_0_read -> encoder_0:avs_read
+	signal mm_interconnect_0_encoder_0_avalon_slave_0_write                : std_logic;                     -- mm_interconnect_0:encoder_0_avalon_slave_0_write -> encoder_0:avs_write
+	signal mm_interconnect_0_encoder_0_avalon_slave_0_writedata            : std_logic_vector(31 downto 0); -- mm_interconnect_0:encoder_0_avalon_slave_0_writedata -> encoder_0:avs_writedata
 	signal mm_interconnect_0_peripheral_led_0_avalon_slave_0_1_readdata    : std_logic_vector(31 downto 0); -- peripheral_LED_0:avs_readdata -> mm_interconnect_0:peripheral_LED_0_avalon_slave_0_1_readdata
 	signal mm_interconnect_0_peripheral_led_0_avalon_slave_0_1_address     : std_logic_vector(3 downto 0);  -- mm_interconnect_0:peripheral_LED_0_avalon_slave_0_1_address -> peripheral_LED_0:avs_address
 	signal mm_interconnect_0_peripheral_led_0_avalon_slave_0_1_read        : std_logic;                     -- mm_interconnect_0:peripheral_LED_0_avalon_slave_0_1_read -> peripheral_LED_0:avs_read
@@ -339,7 +365,7 @@ architecture rtl of niosHello is
 	signal irq_mapper_receiver1_irq                                        : std_logic;                     -- button_pio:irq -> irq_mapper:receiver1_irq
 	signal irq_mapper_receiver2_irq                                        : std_logic;                     -- keys_pio:irq -> irq_mapper:receiver2_irq
 	signal nios2_gen2_0_irq_irq                                            : std_logic_vector(31 downto 0); -- irq_mapper:sender_irq -> nios2_gen2_0:irq
-	signal rst_controller_reset_out_reset                                  : std_logic;                     -- rst_controller:reset_out -> [data_memory:reset, irq_mapper:reset, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, peripheral_LED_0:reset, program_memory:reset, rst_controller_reset_out_reset:in, rst_translator:in_reset]
+	signal rst_controller_reset_out_reset                                  : std_logic;                     -- rst_controller:reset_out -> [data_memory:reset, encoder_0:reset, irq_mapper:reset, mm_interconnect_0:nios2_gen2_0_reset_reset_bridge_in_reset_reset, peripheral_LED_0:reset, program_memory:reset, rst_controller_reset_out_reset:in, rst_translator:in_reset]
 	signal rst_controller_reset_out_reset_req                              : std_logic;                     -- rst_controller:reset_req -> [data_memory:reset_req, nios2_gen2_0:reset_req, program_memory:reset_req, rst_translator:reset_req_in]
 	signal reset_reset_n_ports_inv                                         : std_logic;                     -- reset_reset_n:inv -> rst_controller:reset_in0
 	signal mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read_ports_inv  : std_logic;                     -- mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read:inv -> jtag_uart_0:av_read_n
@@ -376,6 +402,19 @@ begin
 			reset      => rst_controller_reset_out_reset,              -- reset1.reset
 			reset_req  => rst_controller_reset_out_reset_req,          --       .reset_req
 			freeze     => '0'                                          -- (terminated)
+		);
+
+	encoder_0 : component peripheral_ENCONDER
+		port map (
+			clk           => clk_clk,                                              --          clock.clk
+			reset         => rst_controller_reset_out_reset,                       --          reset.reset
+			avs_address   => mm_interconnect_0_encoder_0_avalon_slave_0_address,   -- avalon_slave_0.address
+			avs_read      => mm_interconnect_0_encoder_0_avalon_slave_0_read,      --               .read
+			avs_readdata  => mm_interconnect_0_encoder_0_avalon_slave_0_readdata,  --               .readdata
+			avs_write     => mm_interconnect_0_encoder_0_avalon_slave_0_write,     --               .write
+			avs_writedata => mm_interconnect_0_encoder_0_avalon_slave_0_writedata, --               .writedata
+			A             => encoder_a_export,                                     --    conduit_end.export
+			B             => encoder_b_export                                      --  conduit_end_1.export
 		);
 
 	jtag_uart_0 : component niosHello_jtag_uart_0
@@ -493,6 +532,11 @@ begin
 			data_memory_s1_byteenable                      => mm_interconnect_0_data_memory_s1_byteenable,                   --                                         .byteenable
 			data_memory_s1_chipselect                      => mm_interconnect_0_data_memory_s1_chipselect,                   --                                         .chipselect
 			data_memory_s1_clken                           => mm_interconnect_0_data_memory_s1_clken,                        --                                         .clken
+			encoder_0_avalon_slave_0_address               => mm_interconnect_0_encoder_0_avalon_slave_0_address,            --                 encoder_0_avalon_slave_0.address
+			encoder_0_avalon_slave_0_write                 => mm_interconnect_0_encoder_0_avalon_slave_0_write,              --                                         .write
+			encoder_0_avalon_slave_0_read                  => mm_interconnect_0_encoder_0_avalon_slave_0_read,               --                                         .read
+			encoder_0_avalon_slave_0_readdata              => mm_interconnect_0_encoder_0_avalon_slave_0_readdata,           --                                         .readdata
+			encoder_0_avalon_slave_0_writedata             => mm_interconnect_0_encoder_0_avalon_slave_0_writedata,          --                                         .writedata
 			jtag_uart_0_avalon_jtag_slave_address          => mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_address,       --            jtag_uart_0_avalon_jtag_slave.address
 			jtag_uart_0_avalon_jtag_slave_write            => mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write,         --                                         .write
 			jtag_uart_0_avalon_jtag_slave_read             => mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read,          --                                         .read

@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'niosHello'
  * SOPC Builder design path: ../../niosHello.sopcinfo
  *
- * Generated: Thu Sep 06 07:59:06 BRT 2018
+ * Generated: Thu Sep 13 08:42:33 BRT 2018
  */
 
 /*
@@ -137,6 +137,7 @@
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_AVALON_PIO
 #define __ALTERA_NIOS2_GEN2
+#define __ENCODER
 #define __PERIPHERAL_LED
 
 
@@ -156,19 +157,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart_0"
-#define ALT_STDERR_BASE 0x121030
+#define ALT_STDERR_BASE 0x1210a0
 #define ALT_STDERR_DEV jtag_uart_0
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart_0"
-#define ALT_STDIN_BASE 0x121030
+#define ALT_STDIN_BASE 0x1210a0
 #define ALT_STDIN_DEV jtag_uart_0
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart_0"
-#define ALT_STDOUT_BASE 0x121030
+#define ALT_STDOUT_BASE 0x1210a0
 #define ALT_STDOUT_DEV jtag_uart_0
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -182,7 +183,7 @@
  */
 
 #define ALT_MODULE_CLASS_button_pio altera_avalon_pio
-#define BUTTON_PIO_BASE 0x121010
+#define BUTTON_PIO_BASE 0x121090
 #define BUTTON_PIO_BIT_CLEARING_EDGE_REGISTER 0
 #define BUTTON_PIO_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define BUTTON_PIO_CAPTURE 1
@@ -233,6 +234,20 @@
 
 
 /*
+ * encoder_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_encoder_0 encoder
+#define ENCODER_0_BASE 0x121000
+#define ENCODER_0_IRQ -1
+#define ENCODER_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define ENCODER_0_NAME "/dev/encoder_0"
+#define ENCODER_0_SPAN 64
+#define ENCODER_0_TYPE "encoder"
+
+
+/*
  * hal configuration
  *
  */
@@ -249,7 +264,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart_0 altera_avalon_jtag_uart
-#define JTAG_UART_0_BASE 0x121030
+#define JTAG_UART_0_BASE 0x1210a0
 #define JTAG_UART_0_IRQ 0
 #define JTAG_UART_0_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_0_NAME "/dev/jtag_uart_0"
@@ -267,7 +282,7 @@
  */
 
 #define ALT_MODULE_CLASS_keys_pio altera_avalon_pio
-#define KEYS_PIO_BASE 0x121000
+#define KEYS_PIO_BASE 0x121080
 #define KEYS_PIO_BIT_CLEARING_EDGE_REGISTER 0
 #define KEYS_PIO_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define KEYS_PIO_CAPTURE 1
@@ -294,7 +309,7 @@
  */
 
 #define ALT_MODULE_CLASS_peripheral_LED_0 peripheral_LED
-#define PERIPHERAL_LED_0_BASE 0x0
+#define PERIPHERAL_LED_0_BASE 0x121040
 #define PERIPHERAL_LED_0_IRQ -1
 #define PERIPHERAL_LED_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define PERIPHERAL_LED_0_NAME "/dev/peripheral_LED_0"

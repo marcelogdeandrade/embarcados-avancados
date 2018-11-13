@@ -222,8 +222,7 @@ ALT_CPPFLAGS += -DALT_USE_SMALL_DRIVERS
 # loops. If true, adds -DALT_SIM_OPTIMIZE to ALT_CPPFLAGS in public.mk. When 
 # this setting is true, the BSP shouldn't be used to build applications that 
 # are expected to run real hardware. 
-# setting hal.enable_sim_optimize is true
-ALT_CPPFLAGS += -DALT_SIM_OPTIMIZE
+# setting hal.enable_sim_optimize is false
 
 # Causes the small newlib (C library) to be used. This reduces code and data 
 # footprint at the expense of reduced functionality. Several newlib features 
